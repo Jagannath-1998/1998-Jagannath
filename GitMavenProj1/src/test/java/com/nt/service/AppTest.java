@@ -1,20 +1,16 @@
 package com.nt.service;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+@Test
+public void testWithPostitives() {
+	Arithmetic arr = new Arithmetic();
+    int excepted=300;
+    int actual=arr.sum(100, 200);
+    assertEquals(excepted, actual);
+}
 }
